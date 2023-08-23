@@ -1,5 +1,6 @@
 package com.amazon.jenkins.ec2fleet;
 
+import com.google.common.annotations.VisibleForTesting;
 import hudson.Extension;
 import hudson.model.PeriodicWork;
 import hudson.slaves.Cloud;
@@ -66,7 +67,8 @@ public class CloudNanny extends PeriodicWork {
      *
      * @return basic java list
      */
-    private static List<Cloud> getClouds() {
+    @VisibleForTesting
+    static List<Cloud> getClouds() {
         return Jenkins.get().clouds;
     }
 

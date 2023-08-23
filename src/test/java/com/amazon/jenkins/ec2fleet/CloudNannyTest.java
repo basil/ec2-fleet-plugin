@@ -1,15 +1,16 @@
 package com.amazon.jenkins.ec2fleet;
 
 import hudson.slaves.Cloud;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.powermock.api.mockito.PowerMockito;
-import org.powermock.core.classloader.annotations.PrepareForTest;
-import org.powermock.modules.junit4.PowerMockRunner;
-import org.powermock.reflect.Whitebox;
+import org.mockito.MockedStatic;
+import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -21,18 +22,19 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.verifyNoMoreInteractions;
-import static org.mockito.Mockito.verifyZeroInteractions;
 import static org.mockito.Mockito.when;
 
-@RunWith(PowerMockRunner.class)
-@PrepareForTest(CloudNanny.class)
+@RunWith(MockitoJUnitRunner.class)
 public class CloudNannyTest {
 
-    @Mock
+    private MockedStatic<CloudNanny> mockedCloudNanny;
+
+    @Mock(strictness = Mock.Strictness.LENIENT)
     private EC2FleetCloud cloud1;
 
-    @Mock
+    @Mock(strictness = Mock.Strictness.LENIENT)
     private EC2FleetCloud cloud2;
 
     private List<Cloud> clouds = new ArrayList<>();
@@ -52,8 +54,8 @@ public class CloudNannyTest {
 
     @Before
     public void before() throws Exception {
-        PowerMockito.mockStatic(CloudNanny.class);
-        PowerMockito.when(CloudNanny.class, "getClouds").thenReturn(clouds);
+        mockedCloudNanny = Mockito.mockStatic(CloudNanny.class);
+        mockedCloudNanny.when(CloudNanny::getClouds).thenReturn(clouds);
 
         when(cloud1.getLabelString()).thenReturn("a");
         when(cloud2.getLabelString()).thenReturn("");
@@ -70,16 +72,31 @@ public class CloudNannyTest {
         recurrenceCounters.put(cloud2, recurrenceCounter2);
     }
 
+    @After
+    public void after() {
+        mockedCloudNanny.close();
+    }
+
     private CloudNanny getMockCloudNannyInstance() {
-        CloudNanny cloudNanny = Whitebox.newInstance(CloudNanny.class);
+        CloudNanny cloudNanny = new CloudNanny();
 
         // next execution should trigger running the status check.
         recurrenceCounter1.set(1);
         recurrenceCounter2.set(1);
 
-        Whitebox.setInternalState(cloudNanny, "recurrenceCounters", recurrenceCounters);
+        setInternalState(cloudNanny, "recurrenceCounters", recurrenceCounters);
 
         return cloudNanny;
+    }
+
+    private static void setInternalState(Object obj, String fieldName, Object newValue) {
+        try {
+            Field field = obj.getClass().getDeclaredField(fieldName);
+            field.setAccessible(true);
+            field.set(obj, newValue);
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            throw new AssertionError(e);
+        }
     }
 
     @Test
@@ -105,7 +122,7 @@ public class CloudNannyTest {
         getMockCloudNannyInstance().doRun();
 
         verify(cloud1).update();
-        verifyZeroInteractions(nonEc2FleetCloud);
+        verifyNoInteractions(nonEc2FleetCloud);
     }
 
     @Test

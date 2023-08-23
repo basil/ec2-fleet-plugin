@@ -21,6 +21,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public AcceptAddressTransferResult acceptAddressTransfer(AcceptAddressTransferRequest acceptAddressTransferRequest) {
+        return null;
+    }
+
+    @Override
     public AcceptReservedInstancesExchangeQuoteResult acceptReservedInstancesExchangeQuote(AcceptReservedInstancesExchangeQuoteRequest acceptReservedInstancesExchangeQuoteRequest) {
         return null;
     }
@@ -76,6 +81,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public AllocateIpamPoolCidrResult allocateIpamPoolCidr(AllocateIpamPoolCidrRequest allocateIpamPoolCidrRequest) {
+        return null;
+    }
+
+    @Override
     public ApplySecurityGroupsToClientVpnTargetNetworkResult applySecurityGroupsToClientVpnTargetNetwork(ApplySecurityGroupsToClientVpnTargetNetworkRequest applySecurityGroupsToClientVpnTargetNetworkRequest) {
         return null;
     }
@@ -87,6 +97,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public AssignPrivateIpAddressesResult assignPrivateIpAddresses(AssignPrivateIpAddressesRequest assignPrivateIpAddressesRequest) {
+        return null;
+    }
+
+    @Override
+    public AssignPrivateNatGatewayAddressResult assignPrivateNatGatewayAddress(AssignPrivateNatGatewayAddressRequest assignPrivateNatGatewayAddressRequest) {
         return null;
     }
 
@@ -121,6 +136,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public AssociateIpamResourceDiscoveryResult associateIpamResourceDiscovery(AssociateIpamResourceDiscoveryRequest associateIpamResourceDiscoveryRequest) {
+        return null;
+    }
+
+    @Override
+    public AssociateNatGatewayAddressResult associateNatGatewayAddress(AssociateNatGatewayAddressRequest associateNatGatewayAddressRequest) {
+        return null;
+    }
+
+    @Override
     public AssociateRouteTableResult associateRouteTable(AssociateRouteTableRequest associateRouteTableRequest) {
         return null;
     }
@@ -132,6 +157,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public AssociateTransitGatewayMulticastDomainResult associateTransitGatewayMulticastDomain(AssociateTransitGatewayMulticastDomainRequest associateTransitGatewayMulticastDomainRequest) {
+        return null;
+    }
+
+    @Override
+    public AssociateTransitGatewayPolicyTableResult associateTransitGatewayPolicyTable(AssociateTransitGatewayPolicyTableRequest associateTransitGatewayPolicyTableRequest) {
         return null;
     }
 
@@ -162,6 +192,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public AttachNetworkInterfaceResult attachNetworkInterface(AttachNetworkInterfaceRequest attachNetworkInterfaceRequest) {
+        return null;
+    }
+
+    @Override
+    public AttachVerifiedAccessTrustProviderResult attachVerifiedAccessTrustProvider(AttachVerifiedAccessTrustProviderRequest attachVerifiedAccessTrustProviderRequest) {
         return null;
     }
 
@@ -217,6 +252,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public CancelExportTaskResult cancelExportTask(CancelExportTaskRequest cancelExportTaskRequest) {
+        return null;
+    }
+
+    @Override
+    public CancelImageLaunchPermissionResult cancelImageLaunchPermission(CancelImageLaunchPermissionRequest cancelImageLaunchPermissionRequest) {
         return null;
     }
 
@@ -291,6 +331,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public CreateCoipCidrResult createCoipCidr(CreateCoipCidrRequest createCoipCidrRequest) {
+        return null;
+    }
+
+    @Override
+    public CreateCoipPoolResult createCoipPool(CreateCoipPoolRequest createCoipPoolRequest) {
+        return null;
+    }
+
+    @Override
     public CreateCustomerGatewayResult createCustomerGateway(CreateCustomerGatewayRequest createCustomerGatewayRequest) {
         return null;
     }
@@ -336,6 +386,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public CreateInstanceConnectEndpointResult createInstanceConnectEndpoint(CreateInstanceConnectEndpointRequest createInstanceConnectEndpointRequest) {
+        return null;
+    }
+
+    @Override
     public CreateInstanceEventWindowResult createInstanceEventWindow(CreateInstanceEventWindowRequest createInstanceEventWindowRequest) {
         return null;
     }
@@ -356,6 +411,26 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public CreateIpamResult createIpam(CreateIpamRequest createIpamRequest) {
+        return null;
+    }
+
+    @Override
+    public CreateIpamPoolResult createIpamPool(CreateIpamPoolRequest createIpamPoolRequest) {
+        return null;
+    }
+
+    @Override
+    public CreateIpamResourceDiscoveryResult createIpamResourceDiscovery(CreateIpamResourceDiscoveryRequest createIpamResourceDiscoveryRequest) {
+        return null;
+    }
+
+    @Override
+    public CreateIpamScopeResult createIpamScope(CreateIpamScopeRequest createIpamScopeRequest) {
+        return null;
+    }
+
+    @Override
     public CreateKeyPairResult createKeyPair(CreateKeyPairRequest createKeyPairRequest) {
         return null;
     }
@@ -372,6 +447,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public CreateLocalGatewayRouteResult createLocalGatewayRoute(CreateLocalGatewayRouteRequest createLocalGatewayRouteRequest) {
+        return null;
+    }
+
+    @Override
+    public CreateLocalGatewayRouteTableResult createLocalGatewayRouteTable(CreateLocalGatewayRouteTableRequest createLocalGatewayRouteTableRequest) {
+        return null;
+    }
+
+    @Override
+    public CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult createLocalGatewayRouteTableVirtualInterfaceGroupAssociation(CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequest createLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequest) {
         return null;
     }
 
@@ -401,6 +486,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public CreateNetworkInsightsAccessScopeResult createNetworkInsightsAccessScope(CreateNetworkInsightsAccessScopeRequest createNetworkInsightsAccessScopeRequest) {
+        return null;
+    }
+
+    @Override
     public CreateNetworkInsightsPathResult createNetworkInsightsPath(CreateNetworkInsightsPathRequest createNetworkInsightsPathRequest) {
         return null;
     }
@@ -417,6 +507,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public CreatePlacementGroupResult createPlacementGroup(CreatePlacementGroupRequest createPlacementGroupRequest) {
+        return null;
+    }
+
+    @Override
+    public CreatePublicIpv4PoolResult createPublicIpv4Pool(CreatePublicIpv4PoolRequest createPublicIpv4PoolRequest) {
         return null;
     }
 
@@ -531,6 +626,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public CreateTransitGatewayPolicyTableResult createTransitGatewayPolicyTable(CreateTransitGatewayPolicyTableRequest createTransitGatewayPolicyTableRequest) {
+        return null;
+    }
+
+    @Override
     public CreateTransitGatewayPrefixListReferenceResult createTransitGatewayPrefixListReference(CreateTransitGatewayPrefixListReferenceRequest createTransitGatewayPrefixListReferenceRequest) {
         return null;
     }
@@ -546,7 +646,32 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public CreateTransitGatewayRouteTableAnnouncementResult createTransitGatewayRouteTableAnnouncement(CreateTransitGatewayRouteTableAnnouncementRequest createTransitGatewayRouteTableAnnouncementRequest) {
+        return null;
+    }
+
+    @Override
     public CreateTransitGatewayVpcAttachmentResult createTransitGatewayVpcAttachment(CreateTransitGatewayVpcAttachmentRequest createTransitGatewayVpcAttachmentRequest) {
+        return null;
+    }
+
+    @Override
+    public CreateVerifiedAccessEndpointResult createVerifiedAccessEndpoint(CreateVerifiedAccessEndpointRequest createVerifiedAccessEndpointRequest) {
+        return null;
+    }
+
+    @Override
+    public CreateVerifiedAccessGroupResult createVerifiedAccessGroup(CreateVerifiedAccessGroupRequest createVerifiedAccessGroupRequest) {
+        return null;
+    }
+
+    @Override
+    public CreateVerifiedAccessInstanceResult createVerifiedAccessInstance(CreateVerifiedAccessInstanceRequest createVerifiedAccessInstanceRequest) {
+        return null;
+    }
+
+    @Override
+    public CreateVerifiedAccessTrustProviderResult createVerifiedAccessTrustProvider(CreateVerifiedAccessTrustProviderRequest createVerifiedAccessTrustProviderRequest) {
         return null;
     }
 
@@ -616,6 +741,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DeleteCoipCidrResult deleteCoipCidr(DeleteCoipCidrRequest deleteCoipCidrRequest) {
+        return null;
+    }
+
+    @Override
+    public DeleteCoipPoolResult deleteCoipPool(DeleteCoipPoolRequest deleteCoipPoolRequest) {
+        return null;
+    }
+
+    @Override
     public DeleteCustomerGatewayResult deleteCustomerGateway(DeleteCustomerGatewayRequest deleteCustomerGatewayRequest) {
         return null;
     }
@@ -646,12 +781,37 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DeleteInstanceConnectEndpointResult deleteInstanceConnectEndpoint(DeleteInstanceConnectEndpointRequest deleteInstanceConnectEndpointRequest) {
+        return null;
+    }
+
+    @Override
     public DeleteInstanceEventWindowResult deleteInstanceEventWindow(DeleteInstanceEventWindowRequest deleteInstanceEventWindowRequest) {
         return null;
     }
 
     @Override
     public DeleteInternetGatewayResult deleteInternetGateway(DeleteInternetGatewayRequest deleteInternetGatewayRequest) {
+        return null;
+    }
+
+    @Override
+    public DeleteIpamResult deleteIpam(DeleteIpamRequest deleteIpamRequest) {
+        return null;
+    }
+
+    @Override
+    public DeleteIpamPoolResult deleteIpamPool(DeleteIpamPoolRequest deleteIpamPoolRequest) {
+        return null;
+    }
+
+    @Override
+    public DeleteIpamResourceDiscoveryResult deleteIpamResourceDiscovery(DeleteIpamResourceDiscoveryRequest deleteIpamResourceDiscoveryRequest) {
+        return null;
+    }
+
+    @Override
+    public DeleteIpamScopeResult deleteIpamScope(DeleteIpamScopeRequest deleteIpamScopeRequest) {
         return null;
     }
 
@@ -672,6 +832,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public DeleteLocalGatewayRouteResult deleteLocalGatewayRoute(DeleteLocalGatewayRouteRequest deleteLocalGatewayRouteRequest) {
+        return null;
+    }
+
+    @Override
+    public DeleteLocalGatewayRouteTableResult deleteLocalGatewayRouteTable(DeleteLocalGatewayRouteTableRequest deleteLocalGatewayRouteTableRequest) {
+        return null;
+    }
+
+    @Override
+    public DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult deleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation(DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequest deleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequest) {
         return null;
     }
 
@@ -701,6 +871,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DeleteNetworkInsightsAccessScopeResult deleteNetworkInsightsAccessScope(DeleteNetworkInsightsAccessScopeRequest deleteNetworkInsightsAccessScopeRequest) {
+        return null;
+    }
+
+    @Override
+    public DeleteNetworkInsightsAccessScopeAnalysisResult deleteNetworkInsightsAccessScopeAnalysis(DeleteNetworkInsightsAccessScopeAnalysisRequest deleteNetworkInsightsAccessScopeAnalysisRequest) {
+        return null;
+    }
+
+    @Override
     public DeleteNetworkInsightsAnalysisResult deleteNetworkInsightsAnalysis(DeleteNetworkInsightsAnalysisRequest deleteNetworkInsightsAnalysisRequest) {
         return null;
     }
@@ -722,6 +902,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public DeletePlacementGroupResult deletePlacementGroup(DeletePlacementGroupRequest deletePlacementGroupRequest) {
+        return null;
+    }
+
+    @Override
+    public DeletePublicIpv4PoolResult deletePublicIpv4Pool(DeletePublicIpv4PoolRequest deletePublicIpv4PoolRequest) {
         return null;
     }
 
@@ -821,6 +1006,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DeleteTransitGatewayPolicyTableResult deleteTransitGatewayPolicyTable(DeleteTransitGatewayPolicyTableRequest deleteTransitGatewayPolicyTableRequest) {
+        return null;
+    }
+
+    @Override
     public DeleteTransitGatewayPrefixListReferenceResult deleteTransitGatewayPrefixListReference(DeleteTransitGatewayPrefixListReferenceRequest deleteTransitGatewayPrefixListReferenceRequest) {
         return null;
     }
@@ -836,7 +1026,32 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DeleteTransitGatewayRouteTableAnnouncementResult deleteTransitGatewayRouteTableAnnouncement(DeleteTransitGatewayRouteTableAnnouncementRequest deleteTransitGatewayRouteTableAnnouncementRequest) {
+        return null;
+    }
+
+    @Override
     public DeleteTransitGatewayVpcAttachmentResult deleteTransitGatewayVpcAttachment(DeleteTransitGatewayVpcAttachmentRequest deleteTransitGatewayVpcAttachmentRequest) {
+        return null;
+    }
+
+    @Override
+    public DeleteVerifiedAccessEndpointResult deleteVerifiedAccessEndpoint(DeleteVerifiedAccessEndpointRequest deleteVerifiedAccessEndpointRequest) {
+        return null;
+    }
+
+    @Override
+    public DeleteVerifiedAccessGroupResult deleteVerifiedAccessGroup(DeleteVerifiedAccessGroupRequest deleteVerifiedAccessGroupRequest) {
+        return null;
+    }
+
+    @Override
+    public DeleteVerifiedAccessInstanceResult deleteVerifiedAccessInstance(DeleteVerifiedAccessInstanceRequest deleteVerifiedAccessInstanceRequest) {
+        return null;
+    }
+
+    @Override
+    public DeleteVerifiedAccessTrustProviderResult deleteVerifiedAccessTrustProvider(DeleteVerifiedAccessTrustProviderRequest deleteVerifiedAccessTrustProviderRequest) {
         return null;
     }
 
@@ -891,6 +1106,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DeprovisionIpamPoolCidrResult deprovisionIpamPoolCidr(DeprovisionIpamPoolCidrRequest deprovisionIpamPoolCidrRequest) {
+        return null;
+    }
+
+    @Override
+    public DeprovisionPublicIpv4PoolCidrResult deprovisionPublicIpv4PoolCidr(DeprovisionPublicIpv4PoolCidrRequest deprovisionPublicIpv4PoolCidrRequest) {
+        return null;
+    }
+
+    @Override
     public DeregisterImageResult deregisterImage(DeregisterImageRequest deregisterImageRequest) {
         return null;
     }
@@ -921,6 +1146,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DescribeAddressTransfersResult describeAddressTransfers(DescribeAddressTransfersRequest describeAddressTransfersRequest) {
+        return null;
+    }
+
+    @Override
     public DescribeAddressesResult describeAddresses(DescribeAddressesRequest describeAddressesRequest) {
         return null;
     }
@@ -947,6 +1177,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public DescribeAvailabilityZonesResult describeAvailabilityZones() {
+        return null;
+    }
+
+    @Override
+    public DescribeAwsNetworkPerformanceMetricSubscriptionsResult describeAwsNetworkPerformanceMetricSubscriptions(DescribeAwsNetworkPerformanceMetricSubscriptionsRequest describeAwsNetworkPerformanceMetricSubscriptionsRequest) {
         return null;
     }
 
@@ -1076,6 +1311,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DescribeFastLaunchImagesResult describeFastLaunchImages(DescribeFastLaunchImagesRequest describeFastLaunchImagesRequest) {
+        return null;
+    }
+
+    @Override
     public DescribeFastSnapshotRestoresResult describeFastSnapshotRestores(DescribeFastSnapshotRestoresRequest describeFastSnapshotRestoresRequest) {
         return null;
     }
@@ -1196,6 +1436,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DescribeInstanceConnectEndpointsResult describeInstanceConnectEndpoints(DescribeInstanceConnectEndpointsRequest describeInstanceConnectEndpointsRequest) {
+        return null;
+    }
+
+    @Override
     public DescribeInstanceCreditSpecificationsResult describeInstanceCreditSpecifications(DescribeInstanceCreditSpecificationsRequest describeInstanceCreditSpecificationsRequest) {
         return null;
     }
@@ -1247,6 +1492,31 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public DescribeInternetGatewaysResult describeInternetGateways() {
+        return null;
+    }
+
+    @Override
+    public DescribeIpamPoolsResult describeIpamPools(DescribeIpamPoolsRequest describeIpamPoolsRequest) {
+        return null;
+    }
+
+    @Override
+    public DescribeIpamResourceDiscoveriesResult describeIpamResourceDiscoveries(DescribeIpamResourceDiscoveriesRequest describeIpamResourceDiscoveriesRequest) {
+        return null;
+    }
+
+    @Override
+    public DescribeIpamResourceDiscoveryAssociationsResult describeIpamResourceDiscoveryAssociations(DescribeIpamResourceDiscoveryAssociationsRequest describeIpamResourceDiscoveryAssociationsRequest) {
+        return null;
+    }
+
+    @Override
+    public DescribeIpamScopesResult describeIpamScopes(DescribeIpamScopesRequest describeIpamScopesRequest) {
+        return null;
+    }
+
+    @Override
+    public DescribeIpamsResult describeIpams(DescribeIpamsRequest describeIpamsRequest) {
         return null;
     }
 
@@ -1332,6 +1602,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public DescribeNetworkAclsResult describeNetworkAcls() {
+        return null;
+    }
+
+    @Override
+    public DescribeNetworkInsightsAccessScopeAnalysesResult describeNetworkInsightsAccessScopeAnalyses(DescribeNetworkInsightsAccessScopeAnalysesRequest describeNetworkInsightsAccessScopeAnalysesRequest) {
+        return null;
+    }
+
+    @Override
+    public DescribeNetworkInsightsAccessScopesResult describeNetworkInsightsAccessScopes(DescribeNetworkInsightsAccessScopesRequest describeNetworkInsightsAccessScopesRequest) {
         return null;
     }
 
@@ -1496,6 +1776,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DescribeSnapshotTierStatusResult describeSnapshotTierStatus(DescribeSnapshotTierStatusRequest describeSnapshotTierStatusRequest) {
+        return null;
+    }
+
+    @Override
     public DescribeSnapshotsResult describeSnapshots(DescribeSnapshotsRequest describeSnapshotsRequest) {
         return null;
     }
@@ -1626,6 +1911,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DescribeTransitGatewayPolicyTablesResult describeTransitGatewayPolicyTables(DescribeTransitGatewayPolicyTablesRequest describeTransitGatewayPolicyTablesRequest) {
+        return null;
+    }
+
+    @Override
+    public DescribeTransitGatewayRouteTableAnnouncementsResult describeTransitGatewayRouteTableAnnouncements(DescribeTransitGatewayRouteTableAnnouncementsRequest describeTransitGatewayRouteTableAnnouncementsRequest) {
+        return null;
+    }
+
+    @Override
     public DescribeTransitGatewayRouteTablesResult describeTransitGatewayRouteTables(DescribeTransitGatewayRouteTablesRequest describeTransitGatewayRouteTablesRequest) {
         return null;
     }
@@ -1642,6 +1937,31 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public DescribeTrunkInterfaceAssociationsResult describeTrunkInterfaceAssociations(DescribeTrunkInterfaceAssociationsRequest describeTrunkInterfaceAssociationsRequest) {
+        return null;
+    }
+
+    @Override
+    public DescribeVerifiedAccessEndpointsResult describeVerifiedAccessEndpoints(DescribeVerifiedAccessEndpointsRequest describeVerifiedAccessEndpointsRequest) {
+        return null;
+    }
+
+    @Override
+    public DescribeVerifiedAccessGroupsResult describeVerifiedAccessGroups(DescribeVerifiedAccessGroupsRequest describeVerifiedAccessGroupsRequest) {
+        return null;
+    }
+
+    @Override
+    public DescribeVerifiedAccessInstanceLoggingConfigurationsResult describeVerifiedAccessInstanceLoggingConfigurations(DescribeVerifiedAccessInstanceLoggingConfigurationsRequest describeVerifiedAccessInstanceLoggingConfigurationsRequest) {
+        return null;
+    }
+
+    @Override
+    public DescribeVerifiedAccessInstancesResult describeVerifiedAccessInstances(DescribeVerifiedAccessInstancesRequest describeVerifiedAccessInstancesRequest) {
+        return null;
+    }
+
+    @Override
+    public DescribeVerifiedAccessTrustProvidersResult describeVerifiedAccessTrustProviders(DescribeVerifiedAccessTrustProvidersRequest describeVerifiedAccessTrustProvidersRequest) {
         return null;
     }
 
@@ -1791,6 +2111,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DetachVerifiedAccessTrustProviderResult detachVerifiedAccessTrustProvider(DetachVerifiedAccessTrustProviderRequest detachVerifiedAccessTrustProviderRequest) {
+        return null;
+    }
+
+    @Override
     public DetachVolumeResult detachVolume(DetachVolumeRequest detachVolumeRequest) {
         return null;
     }
@@ -1801,7 +2126,22 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DisableAddressTransferResult disableAddressTransfer(DisableAddressTransferRequest disableAddressTransferRequest) {
+        return null;
+    }
+
+    @Override
+    public DisableAwsNetworkPerformanceMetricSubscriptionResult disableAwsNetworkPerformanceMetricSubscription(DisableAwsNetworkPerformanceMetricSubscriptionRequest disableAwsNetworkPerformanceMetricSubscriptionRequest) {
+        return null;
+    }
+
+    @Override
     public DisableEbsEncryptionByDefaultResult disableEbsEncryptionByDefault(DisableEbsEncryptionByDefaultRequest disableEbsEncryptionByDefaultRequest) {
+        return null;
+    }
+
+    @Override
+    public DisableFastLaunchResult disableFastLaunch(DisableFastLaunchRequest disableFastLaunchRequest) {
         return null;
     }
 
@@ -1812,6 +2152,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public DisableImageDeprecationResult disableImageDeprecation(DisableImageDeprecationRequest disableImageDeprecationRequest) {
+        return null;
+    }
+
+    @Override
+    public DisableIpamOrganizationAdminAccountResult disableIpamOrganizationAdminAccount(DisableIpamOrganizationAdminAccountRequest disableIpamOrganizationAdminAccountRequest) {
         return null;
     }
 
@@ -1866,6 +2211,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public DisassociateIpamResourceDiscoveryResult disassociateIpamResourceDiscovery(DisassociateIpamResourceDiscoveryRequest disassociateIpamResourceDiscoveryRequest) {
+        return null;
+    }
+
+    @Override
+    public DisassociateNatGatewayAddressResult disassociateNatGatewayAddress(DisassociateNatGatewayAddressRequest disassociateNatGatewayAddressRequest) {
+        return null;
+    }
+
+    @Override
     public DisassociateRouteTableResult disassociateRouteTable(DisassociateRouteTableRequest disassociateRouteTableRequest) {
         return null;
     }
@@ -1877,6 +2232,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public DisassociateTransitGatewayMulticastDomainResult disassociateTransitGatewayMulticastDomain(DisassociateTransitGatewayMulticastDomainRequest disassociateTransitGatewayMulticastDomainRequest) {
+        return null;
+    }
+
+    @Override
+    public DisassociateTransitGatewayPolicyTableResult disassociateTransitGatewayPolicyTable(DisassociateTransitGatewayPolicyTableRequest disassociateTransitGatewayPolicyTableRequest) {
         return null;
     }
 
@@ -1896,7 +2256,22 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public EnableAddressTransferResult enableAddressTransfer(EnableAddressTransferRequest enableAddressTransferRequest) {
+        return null;
+    }
+
+    @Override
+    public EnableAwsNetworkPerformanceMetricSubscriptionResult enableAwsNetworkPerformanceMetricSubscription(EnableAwsNetworkPerformanceMetricSubscriptionRequest enableAwsNetworkPerformanceMetricSubscriptionRequest) {
+        return null;
+    }
+
+    @Override
     public EnableEbsEncryptionByDefaultResult enableEbsEncryptionByDefault(EnableEbsEncryptionByDefaultRequest enableEbsEncryptionByDefaultRequest) {
+        return null;
+    }
+
+    @Override
+    public EnableFastLaunchResult enableFastLaunch(EnableFastLaunchRequest enableFastLaunchRequest) {
         return null;
     }
 
@@ -1907,6 +2282,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public EnableImageDeprecationResult enableImageDeprecation(EnableImageDeprecationRequest enableImageDeprecationRequest) {
+        return null;
+    }
+
+    @Override
+    public EnableIpamOrganizationAdminAccountResult enableIpamOrganizationAdminAccount(EnableIpamOrganizationAdminAccountRequest enableIpamOrganizationAdminAccountRequest) {
+        return null;
+    }
+
+    @Override
+    public EnableReachabilityAnalyzerOrganizationSharingResult enableReachabilityAnalyzerOrganizationSharing(EnableReachabilityAnalyzerOrganizationSharingRequest enableReachabilityAnalyzerOrganizationSharingRequest) {
         return null;
     }
 
@@ -1971,6 +2356,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public GetAwsNetworkPerformanceDataResult getAwsNetworkPerformanceData(GetAwsNetworkPerformanceDataRequest getAwsNetworkPerformanceDataRequest) {
+        return null;
+    }
+
+    @Override
     public GetCapacityReservationUsageResult getCapacityReservationUsage(GetCapacityReservationUsageRequest getCapacityReservationUsageRequest) {
         return null;
     }
@@ -2026,6 +2416,41 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public GetInstanceUefiDataResult getInstanceUefiData(GetInstanceUefiDataRequest getInstanceUefiDataRequest) {
+        return null;
+    }
+
+    @Override
+    public GetIpamAddressHistoryResult getIpamAddressHistory(GetIpamAddressHistoryRequest getIpamAddressHistoryRequest) {
+        return null;
+    }
+
+    @Override
+    public GetIpamDiscoveredAccountsResult getIpamDiscoveredAccounts(GetIpamDiscoveredAccountsRequest getIpamDiscoveredAccountsRequest) {
+        return null;
+    }
+
+    @Override
+    public GetIpamDiscoveredResourceCidrsResult getIpamDiscoveredResourceCidrs(GetIpamDiscoveredResourceCidrsRequest getIpamDiscoveredResourceCidrsRequest) {
+        return null;
+    }
+
+    @Override
+    public GetIpamPoolAllocationsResult getIpamPoolAllocations(GetIpamPoolAllocationsRequest getIpamPoolAllocationsRequest) {
+        return null;
+    }
+
+    @Override
+    public GetIpamPoolCidrsResult getIpamPoolCidrs(GetIpamPoolCidrsRequest getIpamPoolCidrsRequest) {
+        return null;
+    }
+
+    @Override
+    public GetIpamResourceCidrsResult getIpamResourceCidrs(GetIpamResourceCidrsRequest getIpamResourceCidrsRequest) {
+        return null;
+    }
+
+    @Override
     public GetLaunchTemplateDataResult getLaunchTemplateData(GetLaunchTemplateDataRequest getLaunchTemplateDataRequest) {
         return null;
     }
@@ -2037,6 +2462,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public GetManagedPrefixListEntriesResult getManagedPrefixListEntries(GetManagedPrefixListEntriesRequest getManagedPrefixListEntriesRequest) {
+        return null;
+    }
+
+    @Override
+    public GetNetworkInsightsAccessScopeAnalysisFindingsResult getNetworkInsightsAccessScopeAnalysisFindings(GetNetworkInsightsAccessScopeAnalysisFindingsRequest getNetworkInsightsAccessScopeAnalysisFindingsRequest) {
+        return null;
+    }
+
+    @Override
+    public GetNetworkInsightsAccessScopeContentResult getNetworkInsightsAccessScopeContent(GetNetworkInsightsAccessScopeContentRequest getNetworkInsightsAccessScopeContentRequest) {
         return null;
     }
 
@@ -2076,6 +2511,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public GetTransitGatewayPolicyTableAssociationsResult getTransitGatewayPolicyTableAssociations(GetTransitGatewayPolicyTableAssociationsRequest getTransitGatewayPolicyTableAssociationsRequest) {
+        return null;
+    }
+
+    @Override
+    public GetTransitGatewayPolicyTableEntriesResult getTransitGatewayPolicyTableEntries(GetTransitGatewayPolicyTableEntriesRequest getTransitGatewayPolicyTableEntriesRequest) {
+        return null;
+    }
+
+    @Override
     public GetTransitGatewayPrefixListReferencesResult getTransitGatewayPrefixListReferences(GetTransitGatewayPrefixListReferencesRequest getTransitGatewayPrefixListReferencesRequest) {
         return null;
     }
@@ -2091,12 +2536,27 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public GetVerifiedAccessEndpointPolicyResult getVerifiedAccessEndpointPolicy(GetVerifiedAccessEndpointPolicyRequest getVerifiedAccessEndpointPolicyRequest) {
+        return null;
+    }
+
+    @Override
+    public GetVerifiedAccessGroupPolicyResult getVerifiedAccessGroupPolicy(GetVerifiedAccessGroupPolicyRequest getVerifiedAccessGroupPolicyRequest) {
+        return null;
+    }
+
+    @Override
     public GetVpnConnectionDeviceSampleConfigurationResult getVpnConnectionDeviceSampleConfiguration(GetVpnConnectionDeviceSampleConfigurationRequest getVpnConnectionDeviceSampleConfigurationRequest) {
         return null;
     }
 
     @Override
     public GetVpnConnectionDeviceTypesResult getVpnConnectionDeviceTypes(GetVpnConnectionDeviceTypesRequest getVpnConnectionDeviceTypesRequest) {
+        return null;
+    }
+
+    @Override
+    public GetVpnTunnelReplacementStatusResult getVpnTunnelReplacementStatus(GetVpnTunnelReplacementStatusRequest getVpnTunnelReplacementStatusRequest) {
         return null;
     }
 
@@ -2137,6 +2597,16 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public ImportVolumeResult importVolume(ImportVolumeRequest importVolumeRequest) {
+        return null;
+    }
+
+    @Override
+    public ListImagesInRecycleBinResult listImagesInRecycleBin(ListImagesInRecycleBinRequest listImagesInRecycleBinRequest) {
+        return null;
+    }
+
+    @Override
+    public ListSnapshotsInRecycleBinResult listSnapshotsInRecycleBin(ListSnapshotsInRecycleBinRequest listSnapshotsInRecycleBinRequest) {
         return null;
     }
 
@@ -2231,6 +2701,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public ModifyInstanceMaintenanceOptionsResult modifyInstanceMaintenanceOptions(ModifyInstanceMaintenanceOptionsRequest modifyInstanceMaintenanceOptionsRequest) {
+        return null;
+    }
+
+    @Override
     public ModifyInstanceMetadataOptionsResult modifyInstanceMetadataOptions(ModifyInstanceMetadataOptionsRequest modifyInstanceMetadataOptionsRequest) {
         return null;
     }
@@ -2241,7 +2716,37 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public ModifyIpamResult modifyIpam(ModifyIpamRequest modifyIpamRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyIpamPoolResult modifyIpamPool(ModifyIpamPoolRequest modifyIpamPoolRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyIpamResourceCidrResult modifyIpamResourceCidr(ModifyIpamResourceCidrRequest modifyIpamResourceCidrRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyIpamResourceDiscoveryResult modifyIpamResourceDiscovery(ModifyIpamResourceDiscoveryRequest modifyIpamResourceDiscoveryRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyIpamScopeResult modifyIpamScope(ModifyIpamScopeRequest modifyIpamScopeRequest) {
+        return null;
+    }
+
+    @Override
     public ModifyLaunchTemplateResult modifyLaunchTemplate(ModifyLaunchTemplateRequest modifyLaunchTemplateRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyLocalGatewayRouteResult modifyLocalGatewayRoute(ModifyLocalGatewayRouteRequest modifyLocalGatewayRouteRequest) {
         return null;
     }
 
@@ -2252,6 +2757,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public ModifyNetworkInterfaceAttributeResult modifyNetworkInterfaceAttribute(ModifyNetworkInterfaceAttributeRequest modifyNetworkInterfaceAttributeRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyPrivateDnsNameOptionsResult modifyPrivateDnsNameOptions(ModifyPrivateDnsNameOptionsRequest modifyPrivateDnsNameOptionsRequest) {
         return null;
     }
 
@@ -2267,6 +2777,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public ModifySnapshotAttributeResult modifySnapshotAttribute(ModifySnapshotAttributeRequest modifySnapshotAttributeRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifySnapshotTierResult modifySnapshotTier(ModifySnapshotTierRequest modifySnapshotTierRequest) {
         return null;
     }
 
@@ -2311,6 +2826,41 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public ModifyVerifiedAccessEndpointResult modifyVerifiedAccessEndpoint(ModifyVerifiedAccessEndpointRequest modifyVerifiedAccessEndpointRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyVerifiedAccessEndpointPolicyResult modifyVerifiedAccessEndpointPolicy(ModifyVerifiedAccessEndpointPolicyRequest modifyVerifiedAccessEndpointPolicyRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyVerifiedAccessGroupResult modifyVerifiedAccessGroup(ModifyVerifiedAccessGroupRequest modifyVerifiedAccessGroupRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyVerifiedAccessGroupPolicyResult modifyVerifiedAccessGroupPolicy(ModifyVerifiedAccessGroupPolicyRequest modifyVerifiedAccessGroupPolicyRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyVerifiedAccessInstanceResult modifyVerifiedAccessInstance(ModifyVerifiedAccessInstanceRequest modifyVerifiedAccessInstanceRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyVerifiedAccessInstanceLoggingConfigurationResult modifyVerifiedAccessInstanceLoggingConfiguration(ModifyVerifiedAccessInstanceLoggingConfigurationRequest modifyVerifiedAccessInstanceLoggingConfigurationRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyVerifiedAccessTrustProviderResult modifyVerifiedAccessTrustProvider(ModifyVerifiedAccessTrustProviderRequest modifyVerifiedAccessTrustProviderRequest) {
+        return null;
+    }
+
+    @Override
     public ModifyVolumeResult modifyVolume(ModifyVolumeRequest modifyVolumeRequest) {
         return null;
     }
@@ -2337,6 +2887,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public ModifyVpcEndpointServiceConfigurationResult modifyVpcEndpointServiceConfiguration(ModifyVpcEndpointServiceConfigurationRequest modifyVpcEndpointServiceConfigurationRequest) {
+        return null;
+    }
+
+    @Override
+    public ModifyVpcEndpointServicePayerResponsibilityResult modifyVpcEndpointServicePayerResponsibility(ModifyVpcEndpointServicePayerResponsibilityRequest modifyVpcEndpointServicePayerResponsibilityRequest) {
         return null;
     }
 
@@ -2386,7 +2941,22 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public MoveByoipCidrToIpamResult moveByoipCidrToIpam(MoveByoipCidrToIpamRequest moveByoipCidrToIpamRequest) {
+        return null;
+    }
+
+    @Override
     public ProvisionByoipCidrResult provisionByoipCidr(ProvisionByoipCidrRequest provisionByoipCidrRequest) {
+        return null;
+    }
+
+    @Override
+    public ProvisionIpamPoolCidrResult provisionIpamPoolCidr(ProvisionIpamPoolCidrRequest provisionIpamPoolCidrRequest) {
+        return null;
+    }
+
+    @Override
+    public ProvisionPublicIpv4PoolCidrResult provisionPublicIpv4PoolCidr(ProvisionPublicIpv4PoolCidrRequest provisionPublicIpv4PoolCidrRequest) {
         return null;
     }
 
@@ -2466,6 +3036,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public ReleaseIpamPoolAllocationResult releaseIpamPoolAllocation(ReleaseIpamPoolAllocationRequest releaseIpamPoolAllocationRequest) {
+        return null;
+    }
+
+    @Override
     public ReplaceIamInstanceProfileAssociationResult replaceIamInstanceProfileAssociation(ReplaceIamInstanceProfileAssociationRequest replaceIamInstanceProfileAssociationRequest) {
         return null;
     }
@@ -2492,6 +3067,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public ReplaceTransitGatewayRouteResult replaceTransitGatewayRoute(ReplaceTransitGatewayRouteRequest replaceTransitGatewayRouteRequest) {
+        return null;
+    }
+
+    @Override
+    public ReplaceVpnTunnelResult replaceVpnTunnel(ReplaceVpnTunnelRequest replaceVpnTunnelRequest) {
         return null;
     }
 
@@ -2551,7 +3131,22 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public RestoreImageFromRecycleBinResult restoreImageFromRecycleBin(RestoreImageFromRecycleBinRequest restoreImageFromRecycleBinRequest) {
+        return null;
+    }
+
+    @Override
     public RestoreManagedPrefixListVersionResult restoreManagedPrefixListVersion(RestoreManagedPrefixListVersionRequest restoreManagedPrefixListVersionRequest) {
+        return null;
+    }
+
+    @Override
+    public RestoreSnapshotFromRecycleBinResult restoreSnapshotFromRecycleBin(RestoreSnapshotFromRecycleBinRequest restoreSnapshotFromRecycleBinRequest) {
+        return null;
+    }
+
+    @Override
+    public RestoreSnapshotTierResult restoreSnapshotTier(RestoreSnapshotTierRequest restoreSnapshotTierRequest) {
         return null;
     }
 
@@ -2611,6 +3206,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
     }
 
     @Override
+    public StartNetworkInsightsAccessScopeAnalysisResult startNetworkInsightsAccessScopeAnalysis(StartNetworkInsightsAccessScopeAnalysisRequest startNetworkInsightsAccessScopeAnalysisRequest) {
+        return null;
+    }
+
+    @Override
     public StartNetworkInsightsAnalysisResult startNetworkInsightsAnalysis(StartNetworkInsightsAnalysisRequest startNetworkInsightsAnalysisRequest) {
         return null;
     }
@@ -2642,6 +3242,11 @@ public class EmptyAmazonEC2 implements AmazonEC2 {
 
     @Override
     public UnassignPrivateIpAddressesResult unassignPrivateIpAddresses(UnassignPrivateIpAddressesRequest unassignPrivateIpAddressesRequest) {
+        return null;
+    }
+
+    @Override
+    public UnassignPrivateNatGatewayAddressResult unassignPrivateNatGatewayAddress(UnassignPrivateNatGatewayAddressRequest unassignPrivateNatGatewayAddressRequest) {
         return null;
     }
 
