@@ -32,7 +32,7 @@ public class CloudNanny extends PeriodicWork {
     }
 
     /**
-     * <h2>Exceptions</h2>
+     * <p><strong>Exceptions</strong>
      * This method will be executed by {@link PeriodicWork} inside {@link java.util.concurrent.ScheduledExecutorService}
      * by default it stops execution if task throws exception, however {@link PeriodicWork} fix that
      * by catch any exception and just log it, so we safe to throw exception here.
