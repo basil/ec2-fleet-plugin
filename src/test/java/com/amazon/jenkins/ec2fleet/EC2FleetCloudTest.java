@@ -1967,7 +1967,7 @@ public class EC2FleetCloudTest {
         EC2FleetCloud ec2FleetCloud = new EC2FleetCloud(
                 "CloudName", null, null, null, null, null,
                 null, null, null, false,
-                false, null, 0, 1, 0,
+                false, 0, 0, 1, 0,
                 1, true, false, "-1", false
                 , 0, 0, false,
                 10, false);
@@ -1979,7 +1979,7 @@ public class EC2FleetCloudTest {
         EC2FleetCloud ec2FleetCloud = new EC2FleetCloud(
                 "TestCloud",  null, null, null, null, null,
                 null, null, null, false,
-                false, null, 0, 1, 0,
+                false, 0, 0, 1, 0,
                 1, true, false, "-1", false,
                 0, 0, false,
                 10, false);
@@ -1991,7 +1991,7 @@ public class EC2FleetCloudTest {
         EC2FleetCloud ec2FleetCloud = new EC2FleetCloud(
                 "TestCloud", null, "Opa", null, null, null,
                 null, null, null, false,
-                false, null, 0, 1, 0,
+                false, 0, 0, 1, 0,
                 1, true, false, "-1", false
                 , 0, 0, false,
                 10, false);
@@ -2003,7 +2003,7 @@ public class EC2FleetCloudTest {
         EC2FleetCloud ec2FleetCloud = new EC2FleetCloud(
                 "TestCloud", "Opa", null, null, null, null,
                 null, null, null, false,
-                false, null, 0, 1, 0,
+                false, 0, 0, 1, 0,
                 1, true, false, "-1", false
                 , 0, 0, false,
                 10, false);
@@ -2015,7 +2015,7 @@ public class EC2FleetCloudTest {
         EC2FleetCloud ec2FleetCloud = new EC2FleetCloud(
                 "TestCloud", "A", "B", null, null, null,
                 null, null, null, false,
-                false, null, 0, 1, 0,
+                false, 0, 0, 1, 0,
                 1, true, false, "-1", false
                 , 0, 0, false,
                 10, false);
@@ -2029,7 +2029,7 @@ public class EC2FleetCloudTest {
         EC2FleetCloud ec2FleetCloud = new EC2FleetCloud(
                 "CloudName", null, null, null, null, null,
                 null, null, null, false,
-                false, null, 0, 1, 0,
+                false, 0, 0, 1, 0,
                 1, true, false, "-1", false
                 , 0, 0, false,
                 45, false);
@@ -2041,7 +2041,7 @@ public class EC2FleetCloudTest {
         EC2FleetCloud ec2FleetCloud = new EC2FleetCloud(
                 "CloudName", null, null, null, null, null,
                 null, null, null, false,
-                false, null, 0, 1, 0,
+                false, 0, 0, 1, 0,
                 0, true, false, "-1", false
                 , 0, 0, false,
                 45, false);
@@ -2054,7 +2054,7 @@ public class EC2FleetCloudTest {
         EC2FleetCloud ec2FleetCloud = new EC2FleetCloud(
                 "CloudName", null, null, null, null, null,
                 null, null, null, false,
-                false, null, 0, 1, 0,
+                false, 0, 0, 1, 0,
                 0, true, false, String.valueOf(maxTotalUses), false
                 , 0, 0, false,
                 45, false);
@@ -2067,7 +2067,7 @@ public class EC2FleetCloudTest {
         EC2FleetCloud ec2FleetCloud = new EC2FleetCloud(
                 "CloudName", null, null, null, null, null,
                 null, null, null, false,
-                false, null, 0, 1, 0,
+                false, 0, 0, 1, 0,
                 0, true, false, maxTotalUses, false
                 , 0, 0, false,
                 45, false);
@@ -2080,7 +2080,7 @@ public class EC2FleetCloudTest {
         EC2FleetCloud ec2FleetCloud = new EC2FleetCloud(
                 "CloudName", null, null, null, null, null,
                 null, null, null, false,
-                false, null, 0, 1, 0,
+                false, 0, 0, 1, 0,
                 0, true, false, maxTotalUses, false
                 , 0, 0, false,
                 45, false);
@@ -2093,7 +2093,7 @@ public class EC2FleetCloudTest {
         EC2FleetCloud ec2FleetCloud = new EC2FleetCloud(
                 "CloudName", null, null, null, null, null,
                 null, null, null, false,
-                false, null, 0, 1, 0,
+                false, 0, 0, 1, 0,
                 0, true, false, String.valueOf(maxTotalUses), false
                 , 0, 0, false,
                 45, false);
