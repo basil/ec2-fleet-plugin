@@ -71,12 +71,14 @@ public class RealTest extends IntegrationTest {
     private List<String> credentialLines;
     private String privateKeyName;
     private AWSCredentialsProvider awsCredentialsProvider;
+    private FleetCloud.ExecutorScaler noScaling;
 
     @Before
     public void before() throws IOException {
         credentialLines = FileUtils.readLines(new File("credentials.txt"));
         privateKeyName = getPrivateKeyName(credentialLines);
         awsCredentialsProvider = getAwsCredentialsProvider(credentialLines);
+        noScaling = new FleetCloud.NoScaler();
     }
 
     @Ignore("for manual run as you need to provide real AWS credentials")
@@ -129,13 +131,13 @@ public class RealTest extends IntegrationTest {
         final SSHConnector computerConnector = new SSHConnector(
                 22, sshCredentialId, null, null, null,
                 null, null, null, null, new NonVerifyingKeyVerificationStrategy());
-        final EC2FleetCloud cloud = new EC2FleetCloud(
+        final FleetCloud cloud = new FleetCloud(
                 "TestCloud", credentialId, null, null, null,
                 autoScalingGroupName,
                 "momo", null, computerConnector, false, false,
                 1, 0, 5, 0, 1, true, false,
-                "-1", false, 180, 15, false,
-                10, true);
+                "-1", false, 180, 15,
+                10, true, noScaling);
         j.jenkins.clouds.add(cloud);
 
         final List<QueueTaskFuture> tasks = enqueTask(2);
@@ -181,13 +183,13 @@ public class RealTest extends IntegrationTest {
         final SSHConnector computerConnector = new SSHConnector(
                 22, sshCredentialId, null, null, null,
                 null, null, null, null, new NonVerifyingKeyVerificationStrategy());
-        final EC2FleetCloud cloud = new EC2FleetCloud(
+        final FleetCloud cloud = new FleetCloud(
                 "TestCloud", credentialId, null, null, null,
                 requestSpotFleetResult.getSpotFleetRequestId(),
                 "momo", null, computerConnector, false, false,
                 1, 0, 5, 0, 1, true, false,
-                "-1", false, 180, 15, false,
-                10, true);
+                "-1", false, 180, 15,
+                10, true, noScaling);
         j.jenkins.clouds.add(cloud);
 
         final List<QueueTaskFuture> tasks = enqueTask(2);

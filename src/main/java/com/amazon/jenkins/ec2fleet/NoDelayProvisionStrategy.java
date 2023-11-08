@@ -50,20 +50,20 @@ public class NoDelayProvisionStrategy extends NodeProvisioner.Strategy {
                 break;
             }
 
-            if (!(c instanceof EC2FleetCloud)) {
-                LOGGER.log(Level.FINE, "label [{0}]: cloud {1} is not an EC2FleetCloud, continuing...",
+            if (!(c instanceof FleetCloud)) {
+                LOGGER.log(Level.FINE, "label [{0}]: cloud {1} is not an FleetCloud, continuing...",
                         new Object[]{label, c.getDisplayName()});
                 continue;
             }
 
             Cloud.CloudState cloudState = new Cloud.CloudState(label, strategyState.getAdditionalPlannedCapacity());
             if (!c.canProvision(cloudState)) {
-                LOGGER.log(Level.INFO, "label [{0}]: cloud {1} can not provision for this label, continuing...",
+                LOGGER.log(Level.FINE, "label [{0}]: cloud {1} can not provision for this label, continuing...",
                         new Object[]{label, c.getDisplayName()});
                 continue;
             }
 
-            if (!((EC2FleetCloud) c).isNoDelayProvision()) {
+            if (!((FleetCloud) c).isNoDelayProvision()) {
                 LOGGER.log(Level.FINE, "label [{0}]: cloud {1} does not use No Delay Provision Strategy, continuing...",
                         new Object[]{label, c.getDisplayName()});
                 continue;
